@@ -31,8 +31,11 @@ def resources():
 
 @app.route('/contrib')
 def contrib():
-    flash('Thank you for registering')
     return render_template('contrib.html')
+
+@app.route('/disclaimer')
+def disclaimer():
+    return render_template('disclaimer.html')
 
 
 if __name__ == '__main__':
